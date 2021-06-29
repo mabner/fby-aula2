@@ -1,12 +1,13 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def indice(request):
-	response = HttpResponse()
+    response = HttpResponse()
 
-	if request.method == 'GET':
-		response.write("Usei o método GET")
-	elif request.method == 'POST':
-		response.write("Usei o método POST")
+    if request.method == 'GET':
+        response.write("Usei o método GET")
+    elif request.method == 'POST':
+        response.write("Usei o método POST")
 
-	return response
+    return response
